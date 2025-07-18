@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartQuiz App</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    
+    <div class = "mainContainer">
+        <h1 id = "h1Title"> Smart Quiz App</h1>
+        <div class = "userInput">
+            <h2>What is your name?</h2>
+            <label>name: <input type = "text" id = "userName"></label>
+            <button id = "submitButton">Submit</button>
+            <h3 id="answer"></h3>
+        </div>
+        <div class="counterApp">
+            <h1>Counter Program</h1>
+            <p>This block demonstrates a simple increment/decrement function</p>
+            <h1 id = "number">0</h1>
+            <div class="submitDiv"> 
+                <button id = "decrement">Decrement</button>
+                <button id = "increment">Increment</button><br>
+                <p>Input a value to change the number of increment/decrement</p>
+                <div class="numberValue">
+                    <label>Number: </label>
+                    <input type ="text" id = "numberValue" value = "1">
+                    <button id = "changeNumberValue">Submit</button>
+                </div>
+                <button id = "resetButton" style="margin-top: 10px;">Reset</button>
+            </div>
+        </div>
+
+        <div class="ageInspectionProgram">
+            <h2>Simple Age Inspection Program</h2>
+            <label>What is your age?</label>
+            <input type= "text" id = "age">
+            <button id = ageSubmitButton>Submit</button>
+            <p id = "result"></p>
+        </div>
+
+        <div class="numberGuessingGame">
+            <h2>Number Guessing Game</h2>
+            <div class="messageDiv" id = 'messageDiv'>
+                <p>Welcome to the simple Number Guessing Game. Click the button to start.</p>
+                <button id = "startButton" style="height: 70px;width: 150px;">Start</button>
+            </div>
+            <div class="menuPanel" style="display:none" id = "menuPanel">
+                <label>Guess the number: </label>
+                <input type="text" id = 'guessNumber' value = 0 style= "max-width: 150px; text-align: center;">
+                <button id = "numberGuessingSubmitButton">Submit</button>
+                <p id='numberGuessingGameMessageBox' style = "min-height: 50px; min-width: 280px;"></p>
+                <button id = "numberGuessingResetButton">Reset</button>
+                <button id = "numberGuessingExitButton">Exit</button>
+            </div>
+        </div>
+        
+    </div>
+    <script src="./index.js" defer></script>
+</body>
+</html>
